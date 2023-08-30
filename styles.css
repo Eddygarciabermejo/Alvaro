@@ -1,0 +1,89 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+}
+
+.title{
+    width: 20%;
+}
+
+h1 {
+    margin: 0;
+    justify-content: end;
+    font-size: 1.5em;
+    width: 80%;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+}
+
+.menu-button {
+    cursor: pointer;
+    position: fixed; /* Hacer que el botón sea flotante */
+    top: 20px; /* Distancia desde la parte superior */
+    left: 20px; /* Distancia desde la izquierda */
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    font-size: 24px; /* Tamaño de fuente más grande para mejor visibilidad */
+    z-index: 1; /* Asegura que el botón esté sobre el contenido */
+}
+
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 200px; /* Establece el ancho del menú lateral */
+    height: 100%; /* Cubre toda la altura de la pantalla */
+    position: fixed;
+    top: 0;
+    left: -280px; /* Establece la posición inicial fuera de la pantalla */
+    padding: 20px;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidebar.open {
+    left: 0; /* Cuando se abre, mueve el menú a la posición 0 */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 50%;
+}
+
+.day-button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.meal-details {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.meal-details h2 {
+    color: #3498db;
+}
+
+/* Agrega más estilos según tus preferencias */
